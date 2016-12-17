@@ -1,0 +1,27 @@
+:: BVH
+- Use full reconstruction on GPU
+- Support dynamic scene
+
+:: Renderer
+- Metropolis Light Transport
+- Add textures
+- Add Participating Media
+- Improve sampling
+- Area light
+- BRDFs
+- Motion blur
+- Depth of Field
+- Use all threads of the GPU, shoot more than one ray per pixel
+
+:: System
+- See alternative to megakernel
+- Improve Build System
+- Automated Tests
+
+:: Misc
+- Woop Triangle Intersection
+- Generate Random numbers outside the kernel
+- Use bins instead of sorting
+- Random direction function
+- OpenGL to Intel Graphics
+- Avoid use of OpenGL (Output to image/screen)

@@ -1,0 +1,11 @@
+cmake_minimum_required (VERSION 2.6)
+project (JSON11)
+
+set (JSON11_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}" CACHE INTERNAL "")
+set (JSON11_SRC_DIR      "${PROJECT_SOURCE_DIR}" CACHE INTERNAL "")
+
+file(GLOB_RECURSE SOURCES "${JSON11_SRC_DIR}/*.cpp")
+
+include_directories("${JSON11_INCLUDE_DIRS}")
+
+add_library(JSON11 STATIC ${SOURCES})

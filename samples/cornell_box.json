@@ -1,0 +1,128 @@
+{
+    "project" : {
+        "name" : "Cornell Box",
+        "n_samples" : 1,
+        "n_bounces" : 10
+    },
+    "camera" : {
+        "film" : {
+            "width"  : 512,
+            "height" : 512
+        },
+        "fov" : 60,
+        "position" : [0, 0, 0],
+        "lookat" : [0, 0, -1],
+        "up" : [0, 1, 0]
+    },
+
+    "objects" : [
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", -90, "x"],
+                ["transalation", [0, 0, -10]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.7, 0.7, 0.7]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", 90, "x"],
+                ["transalation", [0, 0, 1]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [1, 1, 1]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", 180, "z"],
+                ["transalation", [0, -2.5, -5]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.7, 0.7, 0.7]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", 0, "z"],
+                ["transalation", [0, 3.5, -5]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.7, 0.7, 0.7]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [1, 1, 1]],
+                ["rotation", 0, "z"],
+                ["transalation", [0, 3.49, -7.5]]
+            ],
+            "material" : {
+                "type": "light",
+                "color": [1.4, 1.4, 1.4]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", 90, "z"],
+                ["transalation", [-3, 0, -5]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [1, 0.3, 0.4]
+            }
+        },
+        {
+            "filename" : "../samples/plane.obj",
+            "transforms": [
+                ["scale", [6, 1, 6]],
+                ["rotation", -90, "z"],
+                ["transalation", [3, 0, -5]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.3, 1, 0.4]
+            }
+        },
+        {
+            "filename" : "../samples/cube.obj",
+            "transforms": [
+                ["scale", [1.5, 3.5, 1.5]],
+                ["rotation", 30, "y"],
+                ["transalation", [-2, -2.5, -8.0]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.8, 0.8, 0.8]
+            }
+        },
+        {
+            "filename" : "../samples/cube.obj",
+            "transforms": [
+                ["scale", [1.5, 1.5, 1.5]],
+                ["rotation", -30, "y"],
+                ["transalation", [1.2, -2.5, -7.5]]
+            ],
+            "material" : {
+                "type": "lambertian",
+                "albedo": [0.8, 0.8, 0.8]
+            }
+        }
+    ]
+}
